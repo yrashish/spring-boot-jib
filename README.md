@@ -1,6 +1,6 @@
 # About
 
-This project is about Containerizing a Spring Boot Application With Jib. Jib is Java containerizer from Google that lets Java developers build containers using the build tools like Maven, Gradle etc.
+This project is about Containerizing a Spring Boot Application With Jib. Jib is Java containerizer from Google that lets Java developers build containers using the build tools like Maven, Gradle etc without installing docker client.
 
 # How-to
 
@@ -8,5 +8,5 @@ In this [article](https://dzone.com/articles/containerizing-springboot-applicati
 
 # Getting started
 
-Please use `mvn compile jib:build` command to build an image locally using maven without installing docker client.
+Please use `mvn compile jib:build` command to build an image locally using maven.
 
