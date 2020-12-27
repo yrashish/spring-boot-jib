@@ -5,3 +5,8 @@ This project is about Containerizing a Spring Boot Application With Jib. Jib is 
 # How-to
 
 In this [article](https://dzone.com/articles/containerizing-springboot-application-with-jib) details about how to use Jib is explained.
+
+# Getting started
+
+Please use `mvn compile jib:build` command to build an image locally using maven without installing docker client.
+
