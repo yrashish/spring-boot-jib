@@ -10,5 +10,5 @@ In this [article](https://dzone.com/articles/containerizing-springboot-applicati
 
 # Getting started
 
-Please use `mvn compile jib:build` command to build an image locally using maven.
+Please use `mvn compile jib:build` command to build and push an image to a conatiner registry using maven.
 
