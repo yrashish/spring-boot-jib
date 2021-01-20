@@ -12,5 +12,6 @@ In this [article](https://dzone.com/articles/containerizing-springboot-applicati
 
 Please use `mvn compile jib:build` command to build and push an image to a conatiner registry using maven.
 
-# Demo
-![Alt Text](https://github.com/yrashish/spring-boot-jib/blob/master/Jib.gif)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/g2RaApg2zP8/0.jpg)](https://www.youtube.com/watch?v=g2RaApg2zP8)
+
+
