@@ -5,9 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloWorldController {
-    @RequestMapping("/hello")
-    public String message() throws InterruptedException {
-        return "Hello from Jib!!!!";
-    }
+  @RequestMapping("/hello")
+  public String message() {
+    return "Hello from Jib";
+  }
 }
-

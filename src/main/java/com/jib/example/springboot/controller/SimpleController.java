@@ -13,25 +13,25 @@ import java.time.Duration;
 
 @Controller
 public class SimpleController {
-    private static final String JOKES_END_POINT = "https://official-joke-api.appspot.com/random_joke";
+  private static final String JOKES_END_POINT = "https://official-joke-api.appspot.com/random_joke";
 
-    @Autowired
-    private RestTemplate restTemplate;
+  @Autowired
+  private RestTemplate restTemplate;
 
-    @Bean
-    private RestTemplate createRestTemplate(RestTemplateBuilder builder) {
-        return builder.setReadTimeout(Duration.ofSeconds(60))
-                .errorHandler(new ExceptionHandler())
-                .build();
-    }
+  @Bean
+  private RestTemplate createRestTemplate(RestTemplateBuilder builder) {
+    return builder
+            .setReadTimeout(Duration.ofSeconds(60))
+            .errorHandler(new ExceptionHandler())
+            .build();
+  }
 
-    @Bean
-    @EventListener(SimpleController.class)
-    private ResponseEntity<String> getRandomJoke() {
-        System.out.println("Calling external Rest End Point");
-        ResponseEntity<String> response = restTemplate.getForEntity(JOKES_END_POINT, String.class);
-        System.out.println("Response body " + response.getBody());
-        return response;
-    }
-
+  @Bean
+  @EventListener(SimpleController.class)
+  private ResponseEntity<String> getRandomJoke() {
+    System.out.println("Calling external Rest End Point");
+    ResponseEntity<String> response = restTemplate.getForEntity(JOKES_END_POINT, String.class);
+    System.out.println("Response body " + response.getBody());
+    return response;
+  }
 }
